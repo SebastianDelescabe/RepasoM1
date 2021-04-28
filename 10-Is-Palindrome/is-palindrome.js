@@ -6,5 +6,14 @@
  * @param {String} str - esto es un string.
  * @returns {String} - deberia retornar un string.
  */
+var palindromo = "";
 
-function isPalindrome(str) {}
+function isPalindrome(str){
+    palindromo = str;
+    palindromo.split('').reverse().join('')
+    if ( str === palindromo ){
+        return true;
+    }else {
+        return false;
+    }
+}

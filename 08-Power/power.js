@@ -8,4 +8,7 @@
  * @returns {Array || undefined} - deberia retornar un array o undefined.
  */
 
-function power(base, exp) {}
+function power(base, exp) {
+    if(base < 1 )return false
+    return base ** exp
+}

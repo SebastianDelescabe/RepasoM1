@@ -11,5 +11,23 @@
  * @param {string} second - esto es un string.
  * @returns {boolean} - deberia retornar true o false.
  */
+ //NO PUDE TERMINAR NO SE COMO UNIRLOS
+ function validAnagram(first, second) {
+  if (first.length !== second.length) return false;
+  let encontre = false; //falto
+  for (var i = 0; i < first.length; i++) {
+    for (var j = 0; j < second.length; j++) {
+      if (first[i] === second[j]) {
+        encontre = true; //falto
+      }
+    }
+    if(encontre ===false){  //falto
+      return false
+    }
+    return true;
+  }
 
-function validAnagram(first, second) {}
+  //    var first = "panchos";
+  //    var second = "nachspn";
+  //    validAnagram(first,second)
+}

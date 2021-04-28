@@ -7,4 +7,14 @@
  * @returns {Number} - deberia retornar un number.
  */
 
-function productOfArray(arr) {}
+// var arr = [2, 2, 3];
+// var multiplicacion = 0;
+
+function productOfArray(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    multiplicacion += arr[i] * arr[i + 1];
+  }
+  return multiplicacion;
+}
+
+// productOfArray(arr);

@@ -6,4 +6,10 @@
  * @returns {String} - deberia retornar un string.
  */
 
-function reverse(str) {}
+//split convierte string en array
+//reverse Da vuelta un array
+//join une un array
+
+function reverse(str) {
+  return str.split("").reverse().join("");
+}

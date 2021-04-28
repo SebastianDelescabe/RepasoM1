@@ -8,4 +8,13 @@
  * @returns {Number} - deberia retornar un number.
  */
 
-function factorial(num) {}
+//  var num = 6
+//  var resultado = 0;
+
+function factorial(num) {
+  if (num < 2) return num;
+  resultado = num * factorial(num - 1);
+  return resultado;
+}
+
+//  factorial(num)

@@ -12,7 +12,14 @@ class BinarySearchTree {
   }
 
   insert(value) {
-    // escribe un metodo que inserte un nodo al final
+    if(!this.root){
+      this.root = value;
+    }
+    if(!this.left){
+      this.left = insert(value)
+    }else{
+    }
+
   }
 
   find(value) {
