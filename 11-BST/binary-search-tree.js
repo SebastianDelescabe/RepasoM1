@@ -1,40 +1,42 @@
-class Node {
-  constructor(value) {
+  function Node(value){
     this.value = value;
     this.left = null;
     this.right = null;
-  }
 }
 
-class BinarySearchTree {
-  constructor() {
-    this.root = null;
+function BinarySearchTree() {
+  this.root = null;
   }
 
-  insert(value) {
-    if(!this.root){
-      this.root = value;
-    }
+BinarySearchTree.prototype.insert = function(value) {
+  if(!this.root){
+    this.root = value;
+    return this.root;
+  }
+  if(value < this.value){
     if(!this.left){
-      this.left = insert(value)
+      this.left = new Node(value)
     }else{
+      while(this.left){
+        this.left = value
+      }
     }
-
-  }
-
-  find(value) {
-    // escribe un metodo que busque un nodo especifico
-  }
-
-  size() {
-    // escribe un metodo que determine el largo del arbol
-  }
-
-  breadthFirstForEach() {
-    // escribe el metodo breadthFirstForEach
-  }
-
-  depthFirstForEach(arg) {
-    // escribe el metodo depthFirstForEach
   }
 }
+
+BinarySearchTree.prototype.find= function(value) {
+  // escribe un metodo que busque un nodo especifico
+}
+
+BinarySearchTree.prototype.size= function() {
+  // escribe un metodo que determine el largo del arbol
+}
+
+BinarySearchTree.prototype.breadthFirstForEach= function() {
+  // escribe el metodo breadthFirstForEach
+}
+
+BinarySearchTree.prototype.depthFirstForEach= function(arg) {
+  // escribe el metodo depthFirstForEach
+}
+
